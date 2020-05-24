@@ -32,7 +32,9 @@ h1 {
     grid-area: header;
     align-items: center;
     border-bottom: 1px solid #F2F2F2;
-    background-color: #5c5d67;
+    background-color: #FFF;
+    background-size: cover;
+    height: auto;
 }
 
 .main {
@@ -43,7 +45,7 @@ h1 {
     grid-area: main;
     background-color:#A68BA5;
     justify-items: center;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .footer {
@@ -58,26 +60,32 @@ h1 {
 
 /* HEADER */
 
-.header h1 {
-    color: white;
-}
-
 .blog-logo {
     margin: 0 5% 0 0;
 }
 
 .blog-logo h1 {
-    font-size: 3em;
+    color: #000;
+    font-size: 2.5em;
+}
+
+.logo {
+    height: auto;
+    max-width: 100%;
 }
 
 /* NAV */
 
 .main-nav {
-    margin: 1em 0 0 0;
+    margin: 0.25em 0 2em 0;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    width: 100%;
 }
 
 .main-nav ul {
     list-style-type: none;
+    text-align: center;
 }
 
 .main-nav ul li {
@@ -125,7 +133,7 @@ li a:hover {
     max-width: 600px;
 
     /* Design */
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     border-radius: 10px;
     padding: 0 15px 15px 15px;
     background: #fff;
@@ -152,17 +160,17 @@ li a:hover {
   background-color: #FFF; /* Green */
   border: 2px solid #555555;
   color: black;
-  padding: 16px 32px;
+  padding: 0.75em 1.5em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.3rem;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.button:hover {
+.blog-card-button:hover {
     background-color: #5c5d67;
     color: white;
   }
@@ -192,7 +200,7 @@ li a:hover {
 /*Media Queries*/
 /*Only include the properties that differ from their main properties. Don't Repeat Yourself.*/
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
     .main {
         grid-template-columns: repeat(2, 1fr); /* give me more blog cards per row as I expand */
     }
@@ -200,8 +208,8 @@ li a:hover {
     /* HEADER */
 
     .header {
-        flex-direction: row;
-        justify-content: space-between;
+        /*flex-direction: row;*/
+        /*justify-content: space-between;*/
     }
 
     .blog-logo {
@@ -210,11 +218,11 @@ li a:hover {
 
     .main-nav {
         align-self: center;
-        margin: 0 0.8em 0 0;
+        margin: 0 0 1em 0;
     }
 
     .main-nav ul li {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 }
 
