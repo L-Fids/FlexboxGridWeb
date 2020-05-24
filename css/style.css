@@ -43,7 +43,7 @@ h1 {
     grid-auto-rows: minmax(300px, auto);
     grid-gap: 1.5em;
     grid-area: main;
-    background-color:#A68BA5;
+    background-color:#915b13;
     justify-items: center;
     padding: 1em;
 }
@@ -54,7 +54,7 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     grid-area: footer;
-    background-color: #EDADC7;
+    background-color: #987654;
     border-top: 1px solid #FFF;
 }
 
@@ -181,11 +181,11 @@ li a:hover {
 }
 
 .social-icons a {
-    color: #5c5d67;
+    color: #FFF;
 }
 
 .social-icons a:hover {
-    color: white;
+    color: lightgray;
 }
 
 .social-text {
