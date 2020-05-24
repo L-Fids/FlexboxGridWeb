@@ -32,7 +32,7 @@ h1 {
     grid-area: header;
     align-items: center;
     border-bottom: 1px solid #F2F2F2;
-    background-color: #FFF;
+    background-color: #DCDCDC;
     background-size: cover;
     height: auto;
 }
@@ -78,8 +78,8 @@ h1 {
 
 .main-nav {
     margin: 0.25em 0 2em 0;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid #696969;
+    border-top: 1px solid #696969;
     width: 100%;
 }
 
@@ -97,7 +97,7 @@ h1 {
 
 .main-nav ul a {
     text-decoration: none; /* Gets rid of underline */
-    color: #EDADC7;
+    color: #000;
 }
 
 li a:active {
