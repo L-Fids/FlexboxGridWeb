@@ -6,7 +6,9 @@ body {
 }
 
 h1 {
+    font-family: 'Great Vibes', sans-serif;
     color: #000;
+    font-size: 4em;
 }
 
 /*Mobile First Design*/
@@ -18,7 +20,6 @@ h1 {
         "header"
         "main"
         "footer";
-    /*height: 100vh;*/
 }
 
 .box {
@@ -30,11 +31,11 @@ h1 {
     display: flex;
     flex-direction: column;
     grid-area: header;
-    align-items: center;
     border-bottom: 1px solid #F2F2F2;
     background-color: #DCDCDC;
-    background-size: cover;
     height: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .main {
@@ -60,27 +61,14 @@ h1 {
 
 /* HEADER */
 
-.blog-logo {
-    margin: 0 5% 0 0;
-}
+/* logo */
 
-.blog-logo h1 {
-    color: #000;
-    font-size: 2.5em;
-}
-
-.logo {
-    height: auto;
-    max-width: 100%;
-}
-
-/* NAV */
+/* nav */
 
 .main-nav {
     margin: 0.25em 0 2em 0;
-    border-bottom: 1px solid #696969;
-    border-top: 1px solid #696969;
-    width: 100%;
+    border-bottom: 2px solid #696969;
+    border-top: 2px solid #696969;
 }
 
 .main-nav ul {
@@ -96,7 +84,7 @@ h1 {
 }
 
 .main-nav ul a {
-    text-decoration: none; /* Gets rid of underline */
+    text-decoration: none;
     color: #000;
 }
 
@@ -108,16 +96,6 @@ li a:active {
 
 li a:hover {
     color: #FFF;
-}
-
-/* HERO - hidden for now, may try to refine this or just get rid of it */
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                      url('file:///D:/Programming/Udacity-FED/Assignment1/images/bread-oven.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-area: hero;
 }
 
 /* BLOG CARD */
@@ -207,17 +185,8 @@ li a:hover {
 
     /* HEADER */
 
-    .header {
-        /*flex-direction: row;*/
-        /*justify-content: space-between;*/
-    }
-
-    .blog-logo {
-        margin: 0 0 0 0.75em;
-    }
-
     .main-nav {
-        align-self: center;
+        /* align-self: center; */
         margin: 0 0 1em 0;
     }
 
