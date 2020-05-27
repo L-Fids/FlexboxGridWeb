@@ -7,8 +7,13 @@ body {
 
 h1 {
     font-family: 'Great Vibes', sans-serif;
-    color: #000;
+    color: #feda6a;
     font-size: 4em;
+}
+
+h2 {
+    color: #000;
+    font-size: 1.7em;
 }
 
 /*Mobile First Design*/
@@ -32,7 +37,7 @@ h1 {
     flex-direction: column;
     grid-area: header;
     border-bottom: 1px solid #F2F2F2;
-    background-color: #DCDCDC;
+    background-color:#393f4d;
     height: auto;
     justify-content: center;
     text-align: center;
@@ -44,7 +49,7 @@ h1 {
     grid-auto-rows: minmax(300px, auto);
     grid-gap: 1.5em;
     grid-area: main;
-    background-color:#915b13;
+    background-color: #d4d4dc;
     justify-items: center;
     padding: 1em;
 }
@@ -55,7 +60,7 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     grid-area: footer;
-    background-color: #987654;
+    background-color: #feda6a;
     border-top: 1px solid #FFF;
 }
 
@@ -85,7 +90,7 @@ h1 {
 
 .main-nav ul a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 li a:active {
@@ -111,15 +116,11 @@ li a:hover {
     max-width: 600px;
 
     /* Design */
-    /*border: 2px solid black;*/
+    /* border: 2px solid #feda6a; */
     border-radius: 10px;
     padding: 0 15px 15px 15px;
-    background: #fff;
+    background: #FFF;
     box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
-}
-
-.blog-card-title {
-    font-size: 1.7em;
 }
 
 .blog-card-img {
@@ -132,12 +133,13 @@ li a:hover {
 .blog-card-description {
     padding: 10px;
     font-size: 1.5em;
+    color: #000;
 }
 
 .blog-card-button {
   background-color: #FFF; /* Green */
   border: 2px solid #555555;
-  color: black;
+  color: #000;
   padding: 0.75em 1.5em;
   text-align: center;
   text-decoration: none;
@@ -198,6 +200,10 @@ li a:hover {
 @media screen and (min-width: 1024px) {
     .main {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-card-description {
+        font-size: 1.2em;
     }
 }
 
