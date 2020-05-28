@@ -18,10 +18,10 @@ h2 {
 }
 
 h3 {
+    color: #FFF;
     font-size: 0.9em;
     font-weight: bold;
     font-style: italic;
-    color: #FFF;
 }
 
 p {
@@ -129,7 +129,7 @@ li a:hover {
 
     /* Dimensions */
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
 
     /* Design */
     /* border: 2px solid #feda6a; */
@@ -192,7 +192,7 @@ li a:hover {
 
 @media screen and (min-width: 800px) {
     .main {
-        grid-template-columns: repeat(2, 1fr); /* give me more blog cards per row as I expand */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* HEADER */
