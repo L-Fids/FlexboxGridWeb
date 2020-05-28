@@ -14,6 +14,20 @@ h1 {
 h2 {
     color: #000;
     font-size: 1.7em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFF;
+}
+
+p {
+    color: #000;
+    font-size: 1.5em;
+    line-height: 1.5;
 }
 
 /*Mobile First Design*/
@@ -57,7 +71,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     grid-area: footer;
-    background-color: #feda6a;
+    background-color: #393f4d;
     border-top: 1px solid #FFF;
     padding: 2em;
 }
@@ -65,6 +79,10 @@ h2 {
 /* HEADER */
 
 /* logo */
+
+.blog-title {
+    margin: 2em;
+}
 
 /* nav */
 
@@ -80,8 +98,8 @@ h2 {
 }
 
 .main-nav ul li {
-    display: inline-block; /*Content on same line, space for content only*/
-    padding: 0 1.4em 0 0; /*Create padding between li elements*/
+    display: inline-block;
+    padding: 0 1.4em 0 0;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -98,7 +116,7 @@ li a:active {
 }
 
 li a:hover {
-    color: #FFF;
+    color: #000;
 }
 
 /* BLOG CARD */
@@ -130,8 +148,6 @@ li a:hover {
 
 .blog-card-description {
     padding: 10px;
-    font-size: 1.5em;
-    color: #000;
 }
 
 .blog-card-button {
@@ -168,10 +184,6 @@ li a:hover {
 
 .social-text {
     display: inline;
-    font-size: 0.9em;
-    font-weight: bold;
-    font-style: italic;
-    color: #FFF;
     padding-right: 10px;
 }
 
@@ -186,7 +198,6 @@ li a:hover {
     /* HEADER */
 
     .main-nav {
-        /* align-self: center; */
         margin: 0 0 1em 0;
     }
 
