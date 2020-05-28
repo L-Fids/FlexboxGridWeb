@@ -1,13 +1,13 @@
 /*Common Elements*/
 body {
-    background: #fff;
+    background: #FFF;
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
 }
 
 h1 {
     font-family: 'Great Vibes', sans-serif;
-    color: #feda6a;
+    color: #FEDA6A;
     font-size: 4em;
 }
 
@@ -30,6 +30,10 @@ p {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Mobile First Design*/
 
 .container {
@@ -47,7 +51,7 @@ p {
     flex-direction: column;
     grid-area: header;
     border-bottom: 1px solid #F2F2F2;
-    background-color:#393f4d;
+    background-color:#393F4D;
     background-image: url("https://l-fids.github.io/FlexboxGridWeb/images/dark-mosaic.png");
     height: auto;
     justify-content: center;
@@ -60,7 +64,7 @@ p {
     grid-auto-rows: minmax(300px, auto);
     grid-gap: 1em;
     grid-area: main;
-    background-color: #d4d4dc;
+    background-color: #D4D4DC;
     justify-items: center;
     padding: 1em;
 }
@@ -71,7 +75,7 @@ p {
     justify-content: flex-end;
     align-items: center;
     grid-area: footer;
-    background-color: #393f4d;
+    background-color: #393F4D;
     border-top: 1px solid #FFF;
     padding: 2em;
 }
@@ -105,7 +109,6 @@ p {
 }
 
 .main-nav ul a {
-    text-decoration: none;
     color: #FFF;
 }
 
@@ -151,7 +154,7 @@ li a:hover {
 }
 
 .blog-card-button {
-  background-color: #FFF; /* Green */
+  background-color: #FFF;
   border: 2px solid #555555;
   color: #000;
   padding: 0.75em 1.5em;
@@ -165,8 +168,8 @@ li a:hover {
 }
 
 .blog-card-button:hover {
-    background-color: #5c5d67;
-    color: white;
+    background-color: #5C5D67;
+    color: #FFF;
   }
 
 /* SOCIAL ICONS */
@@ -179,7 +182,7 @@ li a:hover {
 }
 
 .social-icons a:hover {
-    color: lightgray;
+    color: #D3D3D3;
 }
 
 .social-text {
