@@ -1,6 +1,6 @@
-@import url("https://l-fids.github.io/FlexboxGridWeb/css/header.css");
-@import url("https://l-fids.github.io/FlexboxGridWeb/css/blog-card.css");
-@import url("https://l-fids.github.io/FlexboxGridWeb/css/footer.css");
+@import url("header.css");
+@import url("blog-card.css");
+@import url("footer.css");
 
 /*Common Elements*/
 body {
