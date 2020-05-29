@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: footer;
+    background-color: #393F4D;
+    border-top: 1px solid #FFF;
+    padding: 2em;
+}
+
+.fab, .fas {
+    padding: 5px;
+}
+
+.social-icons a:hover {
+    color: #D3D3D3;
+}
+
+.social-text {
+    display: inline;
+    padding-right: 10px;
+}

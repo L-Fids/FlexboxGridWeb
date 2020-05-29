@@ -1,0 +1,48 @@
+.blog-card {
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+
+    /* Dimensions */
+    width: 90%;
+    max-width: 500px;
+
+    /* Design */
+    /* border: 2px solid #feda6a; */
+    border-radius: 10px;
+    padding: 0 15px 15px 15px;
+    background: #FFF;
+    box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+}
+
+.blog-card-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-card-description {
+    padding: 10px;
+}
+
+.blog-card-button {
+  background-color: #FFF;
+  border: 2px solid #555555;
+  color: #000;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.blog-card-button:hover {
+    background-color: #5C5D67;
+    color: #FFF;
+  }
