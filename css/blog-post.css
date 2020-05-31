@@ -1,1 +1,43 @@
 @import url("style.css");
+
+.blog-post-main {
+    background-color: #D4D4DC;
+}
+
+.blog-post-card {
+
+}
+
+.blog-post-title {
+
+}
+
+.blog-post-details {
+    padding: 0;
+}
+
+.blog-post-details ul {
+    list-style-type: none;
+}
+
+.blog-post-details li {
+    display: inline-block;
+    padding: 0 2em 0 0;
+    text-align: left;
+}
+
+.blog-post-text {
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1720px) {
+
+}
