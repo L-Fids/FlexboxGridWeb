@@ -1,11 +1,21 @@
 @import url("style.css");
 
+h4 {
+    color:#000;
+    margin: 0 0 0 1em;
+    font-size: 1.2em;
+    line-height: 2.5;
+    text-decoration: underline;
+}
+
 .blog-post-main {
     background-color: #D4D4DC;
+    grid-area: main;
 }
 
 .blog-post-wrap {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 2em auto;
@@ -14,11 +24,12 @@
 
 .blog-post-title {
     line-height: 0;
+    padding: 0 0.5em 0 0.5em;
 }
 
 .blog-post-details {
-    padding: 0;
     line-height: 0;
+    padding: 0 0.5em 0 0.5em;
 }
 
 .blog-post-details ul {
@@ -27,19 +38,19 @@
 
 .blog-post-details li {
     display: inline-block;
-    padding: 0 2em 0 0;
+    padding: 0 1em 0 0.5em;
     text-align: left;
 }
 
 .blog-post-photo img {
-    max-width: 800px;
+    width: 90%;
     height: auto;
     margin: 1em 0;
+    padding: 0 1em 0 1em;
 }
 
 .blog-post-text {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin: 0.5em;
     font-size: 1.4em;
 }
 
@@ -52,11 +63,27 @@
 }
 
 .ingredients p {
-    margin: 0 0 0 1em;
+    margin: 0 1em 0 1em;
+}
+
+.instruction {
+    line-height: 1.6;
+    margin: 0 1em 0 1em;
+}
+
+.instruction-title {
+    font-weight: bold;
 }
 
 @media screen and (min-width: 800px) {
+    .blog-post-text {
+        margin: 0.5em;
+        font-size: 1.2em;
+    }
 
+    .ingredients p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1024px) {

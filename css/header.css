@@ -16,6 +16,11 @@
     margin: 2em;
 }
 
+#blog-title {
+    text-decoration: none;
+    color: #FEDA6A;
+}
+
 /*NAV*/
 
 .main-nav {
