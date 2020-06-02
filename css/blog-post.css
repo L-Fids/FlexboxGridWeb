@@ -54,16 +54,17 @@ h4 {
     font-size: 1.4em;
 }
 
-.ingredients {
+.recipe {
     border: 1px solid #000;
-    font-size: 1em;
     background: #FFF;
     box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
     padding: 1em 0 1em 0;
+    max-width: 675px;
 }
 
-.ingredients p {
-    margin: 0 1em 0 1em;
+.recipe p {
+    margin: 0 1.2em 0 1.2em;
+    font-size: 1em;
 }
 
 .instruction {
@@ -71,11 +72,61 @@ h4 {
     margin: 0 1em 0 1em;
 }
 
-.instruction-title {
+.about-author-wrap {
+    max-width: 100%;
+    margin: 1em;
+}
+
+.about-author-wrap p{
+    font-size: 1em;
+    line-height: 1;
+}
+
+.about-author-box {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #000;
+    padding-top: 1em;
+    margin-right: 2em;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+.about-author-box img {
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+    border: 2px solid #000;
+}
+
+
+.author-details p {
+    display: inline-block;
+    font-size: 1em;
+    padding-right: 1em;
+}
+
+.author-bio {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.strong-text {
     font-weight: bold;
 }
 
+.emphasis-text {
+    font-style: italic;
+}
+
 @media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 1024px) {
     .blog-post-text {
         margin: 0.5em;
         font-size: 1.2em;
@@ -84,10 +135,6 @@ h4 {
     .ingredients p {
         font-size: 1.2em;
     }
-}
-
-@media screen and (min-width: 1024px) {
-
 }
 
 @media screen and (min-width: 1720px) {
