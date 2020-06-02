@@ -126,10 +126,6 @@ h4 {
     font-style: italic;
 }
 
-@media screen and (min-width: 800px) {
-
-}
-
 @media screen and (min-width: 1024px) {
     .blog-post-text {
         margin: 0.5em;
@@ -144,8 +140,4 @@ h4 {
     .recipe li {
         font-size: 1em;
     }
-}
-
-@media screen and (min-width: 1720px) {
-
 }
