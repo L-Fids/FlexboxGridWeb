@@ -4,7 +4,7 @@
     grid-area: header;
     border-bottom: 1px solid #F2F2F2;
     background-color:#393F4D;
-    background-image: url("https://l-fids.github.io/FlexboxGridWeb/images/dark-mosaic.png");
+    background-image: url("../images/dark-mosaic.png");
     height: auto;
     justify-content: center;
     text-align: center;
