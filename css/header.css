@@ -4,7 +4,7 @@
     grid-area: header;
     border-bottom: 1px solid #F2F2F2;
     background-color:#393F4D;
-    background-image: url("../images/dark-mosaic.png");
+    background-image: url("../images/grassBackground.PNG");
     height: auto;
     justify-content: center;
     text-align: center;
@@ -26,8 +26,8 @@
 
 .main-nav {
     margin: 0 0 2em 0;
-    border-bottom: 2px solid #696969;
-    border-top: 2px solid #696969;
+    /*border-bottom: 2px solid #696969;
+    border-top: 2px solid #696969;*/
 }
 
 .main-nav ul {
