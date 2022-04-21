@@ -80,6 +80,16 @@ a {
 
 /*Media Queries*/
 
+/* 2340x1080 pixels at 476ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    
+
 @media screen and (min-width: 1260px) {
     .main {
         grid-template-columns: repeat(2, 1fr);
