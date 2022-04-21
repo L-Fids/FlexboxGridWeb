@@ -80,7 +80,7 @@ a {
 
 /*Media Queries*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1260px) {
     .main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -96,7 +96,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .main {
         grid-template-columns: repeat(3, 1fr);
     }
