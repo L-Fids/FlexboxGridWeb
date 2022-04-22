@@ -6,6 +6,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Great+Vibes&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8250ed618d.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -18,16 +19,15 @@
                 </div>
                 <nav class="main-nav">
                     <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Zombies</a></li>
-                        <li><a href="#">Plants</a></li>
-                        <li><a href="#">About</a></li>
+                        <button class="btn list-item" onclick="filterSelection('zombie')">Zombies</button>
+                        <button class="btn list-item" onclick="filterSelection('plant')">Plants</button>
+                        <button class="btn list-item" onclick="filterSelection('all')">Reset</button>
                     </ul>
                 </nav>
             </header>
             <!--MAIN-->
             <div class="main" role="main">
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Basic Zombie</h2>
                     <img src="images/Zombies/BasicZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -36,7 +36,7 @@
                         common corpse. He's an individual, darn it, and 
                         he's going to make a difference even if it kills you.</p>
                 </div>
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Conehead Zombie</h2>
                     <img src="images/Zombies/ConeheadZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -44,7 +44,7 @@
                         After a wild night, Conehead Zombie woke up holding a mysterious receipt 
                         for a cone and industrial strength adhesive.</p>
                 </div>
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Buckethead Zombie</h2>
                     <img src="images/Zombies/BucketheadZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -54,7 +54,7 @@
                         It's been a few years, though, and zombies wonder if he's 
                         got any surprises left. His secret? He doesn't.</p>
                 </div>
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Flag Zombie</h2>
                     <img src="images/Zombies/FlagZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -62,7 +62,7 @@
                         A spelling impaired zombie named "Brian," Flag Zombie keeps 
                         thinking the rest of the zombies are talking to him. At least he feels important.</p>
                 </div>
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Snorkel Zombie</h2>
                     <img src="images/Zombies/SnorkelZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -73,14 +73,14 @@
                         chocolate-covered brains. But nothing seems to work. 
                         They just can't seem to see past the snorkel on his face.</p>
                 </div>
-                <div class="blog-card zombie">
+                <div class="blog-card zombie show">
                     <h2 class="blog-card-title">Newspaper Zombie</h2>
                     <img src="images/Zombies/NewspaperZombie.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">Newspaper protects zombie, who is then enraged when it is destroyed.
                         Special: becomes a flighty zombie once the newspaper is destroyed
                         You can't really blame him for getting so upset; he was THIS close to finishing the crossword (23 down was "Brains").</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Sunflower</h2>
                     <img src="images/Plants/Sunflower.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -90,7 +90,7 @@
                         Youtuber channel has been bursting with fun. She is currently putting the final touches 
                         on her reality show TV pitch "Sunflower Thinks She Can Dance."</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Wall-nut</h2>
                     <img src="images/Plants/Wall-nut.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -99,7 +99,7 @@
                         Wall-nut is looking forward to a real challenge on the front lines of home defense. 
                         DEFENSE! DEFENSE!</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Peashooter</h2>
                     <img src="images/Plants/Peashooter.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -107,7 +107,7 @@
                         "What is it like being famous?" asked the Peashooter while sipping his bottled water, 
                         "I can't talk right now, I'm finishing my merchandising deal. Hold my fir coat."</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Potato Mine</h2>
                     <img src="images/Plants/PotatoMine.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -118,7 +118,7 @@
                         catchphrases and focus testing as many variations as possible (Tubular? Really?), 
                         Potato Mine weeded out the competition to stick with what he knows best.</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Bloomerang</h2>
                     <img src="images/Plants/Bloomerang.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
@@ -127,7 +127,7 @@
                         As the first new member to your home defense team, Bloomerang enjoys long walkabouts 
                         with his friend, Koala Bear, and listening to his Bob Barley albums out back.</p>
                 </div>
-                <div class="blog-card plant">
+                <div class="blog-card plant show">
                     <h2 class="blog-card-title">Bonk Choy</h2>
                     <img src="images/Plants/BonkChoy.PNG" alt="" class="blog-card-img">
                     <p class="blog-card-description">
